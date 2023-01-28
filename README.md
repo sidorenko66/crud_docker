@@ -1,9 +1,13 @@
-# CRUD
+# Склады и товары
 
-Необходимо выполнить и предоставить на проверку задачу:
+```
+docker build . --tag=crud_image
+```
 
-[Склады и товары](./stocks_products)
+```
+docker run -d -p 7000:8000 --name=crud_cont crud_image
+```
 
-Работа должна соответствовать принятому [стилю оформления кода](https://github.com/netology-code/codestyle/tree/master/python).
-
-Любые вопросы по решению задач задавайте в чате учебной группы.
+```
+curl localhost:7000
+```
